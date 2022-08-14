@@ -5,5 +5,6 @@
 
 ## 使用方法
 constant.js で設定する
-FolderPath でGoogleスライドが格納されているフォルダーURLを指定する  
-シートロケールでスライド名などの位置を指定して入力することができる
+FolderPath  でGoogleスライドが格納されているフォルダーURLを指定する  
+isShowTitle で表題の表示・非表示を設定
+SheetLocale でデータ列の格納位置を指定できる
