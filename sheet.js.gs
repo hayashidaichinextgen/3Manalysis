@@ -20,6 +20,7 @@ const Input_Data = function (data) {
   sht.getRange(startRow, startCol, endRow, endcol).setValues(data_array)
 }
 
+// この辺のロジックがきもいです
 function objToArray(objs) {
   // 結果
   let result = [];
