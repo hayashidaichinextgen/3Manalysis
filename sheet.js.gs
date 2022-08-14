@@ -4,8 +4,8 @@ const Input_Data = function (data) {
   let data_array = objToArray(data);
   console.log(data_array)
 
-  let startRow = SheetLocale[1].row
-  let startCol = SheetLocale[1].col
+  let startRow = SheetLocale[0].row
+  let startCol = SheetLocale[0].col
   let endRow   = data_array.length
   let endcol   = data_array[0].length
 
