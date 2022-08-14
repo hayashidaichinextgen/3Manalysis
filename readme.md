@@ -5,5 +5,5 @@
 
 ## 使用方法
 constant.js で設定する
-FolderPath でGoogleスライドが格納されているフォルダーURLを指定する
+FolderPath でGoogleスライドが格納されているフォルダーURLを指定する  
 シートロケールでスライド名などの位置を指定して入力することができる
