@@ -4,8 +4,16 @@ const Input_Data = function (data) {
   let data_array = objToArray(data);
   console.log(data_array)
 
-  let startRow = SheetLocale[1].row
-  let startCol = SheetLocale[1].col
+  let titleCell
+  // 表示タイトルを取得する
+  for (let i in SheetLocale) {
+    if (SheetLocale[i].isdisplay) {
+      titleCell = i
+    }
+  }
+
+  let startRow = SheetLocale[titleCell].row
+  let startCol = SheetLocale[titleCell].col
   let endRow   = data_array.length
   let endcol   = data_array[0].length
 
@@ -26,7 +34,11 @@ function objToArray(objs) {
       tmp.push(disCol.name)
     }
   }
-  result.push(tmp)
+
+  // 表題の表示
+  if (isShowTitle) {
+    result.push(tmp)
+  }
 
   // データを格納
   for (let onum in objs) {
