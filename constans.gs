@@ -1,5 +1,5 @@
 // 取得対象データ
-const FolderPath = "https://drive.google.com/drive/folders/1tBZHn9sL-rqb2fD8VPlZyE5b_ZggRQjw"
+const FolderPath = null
 
 // 表題の表示・非表示を指定可能
 const isShowTitle = true
